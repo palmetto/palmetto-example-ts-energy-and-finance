@@ -25,6 +25,7 @@ PALMETTO_ACCOUNT_PASSWORD=YOUR_SERVICE_ACCOUNT_PASSWORD
 ```
 
 There is a sample .env file called `.env.example` that you can rename to `.env` and put your values in. 
+
 ‼️ **If you do not have a service account please contact developer-support@palmetto.com**
 
 5. Run the samples by running `npm run start`
