@@ -6,8 +6,8 @@ export function getAuthorizationHandler(environment: Environment) {
     const response = await fetch(`${environment.auth_url}`, {
       method: 'POST',
       body: JSON.stringify({
-        username: process.env.PALMETTO_ACCOUNT_EMAIL,
-        password: process.env.PALMETTO_ACCOUNT_PASSWORD,
+        username: environment.username,
+        password: environment.password,
       }),
       headers: { 'Content-Type': 'application/json' },
     });

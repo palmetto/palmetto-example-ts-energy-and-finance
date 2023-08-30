@@ -20,11 +20,13 @@ In order to get started and make your first succesfull API calls you will need t
 3. Run `npm run generate` to generate the Palmetto Energy and Finance client SDKs
 4. Create a .env file in the root of the project and add the following variables:
 ```
-PALMETTO_ACCOUNT_EMAIL=YOUR_SERVICE_ACCOUNT_EMAIL@DOMAIN.COM
-PALMETTO_ACCOUNT_PASSWORD=YOUR_SERVICE_ACCOUNT_PASSWORD
+PALMETTO_ENERGY_ACCOUNT_EMAIL=YOUR_SERVICE_ACCOUNT_EMAIL@DOMAIN.COM
+PALMETTO_ENERGY_ACCOUNT_PASSWORD=YOUR_SERVICE_ACCOUNT_PASSWORD
+PALMETTO_FINANCE_ACCOUNT_EMAIL=YOUR_SERVICE_ACCOUNT_EMAIL@DOMAIN.COM
+PALMETTO_FINANCE_ACCOUNT_PASSWORD=YOUR_SERVICE_ACCOUNT_PASSWORD
 ```
 
-There is a sample .env file called `.env.example` that you can rename to `.env` and put your values in. 
+There is a sample .env file called `.env.example` that you can rename to `.env` and put your values in. If you use the same account for both Palmetto Finance and Palmetto Energy you can use the same email and password for both.
 
 ‼️ **If you do not have a service account please contact developer-support@palmetto.com**
 
