@@ -19,7 +19,8 @@ This project is a sample of how to use the Palmetto Energy and Finance API in Ty
 In order to get started and make your first succesfull API calls you will need to do the following:
 1. Clone this repo (or chose `Use this template` to start a new repo from it)
    
-    ![image](https://github.com/palmetto/palmetto-example-ts-energy-and-finance/assets/304410/dbeed2f6-256d-4cd1-a500-cb9df7ef30d2) 
+![image](https://github.com/palmetto/palmetto-example-ts-energy-and-finance/assets/304410/605bd369-9b4d-440d-bf8e-6232122444d8)
+
 3. Run `npm install` to install all the packages
 4. Run `npm run generate` to generate the Palmetto Energy and Finance client SDKs
 5. Create a .env file in the root of the project and add the following variables:
