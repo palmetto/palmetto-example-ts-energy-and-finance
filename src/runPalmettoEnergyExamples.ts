@@ -27,6 +27,22 @@ export async function runPalmettoEnergyExamples() {
         console.log(`Found ${projects.paging.totalRecords} projects`);
         console.log(chalk.italic.green('<<<\n'));
 
+        if (projects.paging.totalRecords > 0) {
+            const project = projects.data[0];
+            
+            console.log(chalk.italic.green(`>>> Find a single project progress (Name: ${project.name}`));
+            const projectStatus = await palmettoEnergyClient.projects.projectsControllerFindOneStatusDetails({ id: project.id });
+            console.log(`Submission Creation status is ${projectStatus.stages.submission.subStages.creation?.status}`);
+            console.log(`Submission Submission status is ${projectStatus.stages.submission.subStages.submission?.status}`);
+            console.log(`Submission Review status is ${projectStatus.stages.submission.subStages.review?.status}`);
+            console.log(chalk.italic.green('<<<\n'));
+
+            console.log(chalk.italic.green(`>>> Find a single project service areas (Name: ${project.name}`));
+            const projectServiceAreas = await palmettoEnergyClient.projects.projectsControllerGetProjectServiceArea({ id: project.id }); 
+            console.log(`Found service area "${projectServiceAreas.name}" with ${projectServiceAreas.supportedUtilities.length} supported utilities`);
+            console.log(chalk.italic.green('<<<\n'));
+        }
+
 
     } catch (e) {
         console.error(e);

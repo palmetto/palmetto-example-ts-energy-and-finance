@@ -21,7 +21,7 @@
     "build:watch": "tsc -w -p tsconfig.json",
     "build:release": "npm run clean && tsc -p tsconfig.release.json", 
     "generate": "npm run gen:energy && npm run gen:finance",
-    "gen:energy": "openapi --useOptions --name PalmettoEnergyClient --input https://palmetto.energy/api/docs-json  --output ./src/_generated/palmetto-energy-api",
+    "gen:energy": "openapi --useOptions --name PalmettoEnergyClient --input https://next.palmetto.energy/api/docs-json  --output ./src/_generated/palmetto-energy-api",
     "gen:finance": "openapi --useOptions --name PalmettoFinanceClient --input https://palmetto.finance/docs/json  --output ./src/_generated/palmetto-finance-api"
   }, 
   "license": "MIT",
